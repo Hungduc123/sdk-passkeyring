@@ -11,6 +11,10 @@ npm install --save sdk-v2-egglepasskeywallet
 ```bash
 yarn add sdk-v2-egglepasskeywallet
 ```
+## Supported chains 
+```
+ ethereum (0x1), optimism(0xa), bnb(0x38), polygon(0x89), arbitrum(0xa4b1), base(0x8453)
+```
 
 ## Usage
 
