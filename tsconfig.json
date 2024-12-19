@@ -20,6 +20,6 @@
       "@panhasilva/main": [ "./lib/main.tsx" ]
     }
   },
-  "include": [ "./lib", "lib/hook/useConnect.tsx"],
+  "include": [ "./lib", "lib/hook/useConnect.tsx","global.d.ts" ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

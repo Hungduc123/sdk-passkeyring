@@ -1,3 +1,4 @@
+import { URL_PASSKEY } from './lib/constants/index'
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
@@ -30,6 +31,22 @@ export default defineConfig(configEnv => ({
     },
     rollupOptions: {
       external: ['react'],
+    },
+  },
+  server: {
+    origin: 'http://localhost:3002',
+    cors: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json',
+    },
+    proxy: {
+      '/api/ankrRpc': {
+        target: 'https://smart.keyring.app', // Replace with the actual API endpoint
+        changeOrigin: true,
+        secure: false,
+        // rewrite: (path) => path.replace(/^\/api\/ankrRpc/, ''),
+      },
     },
   },
 }))

@@ -29,8 +29,8 @@ export const infoGroup = {
 
 }
 
-// export const GROUP_SLUG = 'egglegamewallet'
-export const GROUP_SLUG = 'egglepasskeywallet'
+export const GROUP_SLUG = 'egglegamewallet'
+// export const GROUP_SLUG = 'egglepasskeywallet'
 // export const GROUP_SLUG = 'passkeywallet'
 // export const GROUP_SLUG = 'bacoorpasskeywallet'
 // export const GROUP_SLUG = 'keyringpasskeywallet'
@@ -62,6 +62,8 @@ const getURLPasskey = () => {
   }
 }
 
-export const URL_PASSKEY = getURLPasskey()
+// export const URL_PASSKEY = getURLPasskey()
+// export const URL_PASSKEY = 'http://localhost:3000'
+export const URL_PASSKEY = 'https://pass.w3w.app'
 
 export const infoWallet = { slug: GROUP_SLUG, url: URL_PASSKEY, ...infoGroup[GROUP_SLUG] }
