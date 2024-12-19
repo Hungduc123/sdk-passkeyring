@@ -50,6 +50,8 @@ class MyCustomWalletProvider implements WalletProvider {
         return this.getAccounts()
       case 'eth_chainId':
         return this.getChainId()
+      case 'net_version':
+        return Number(this.chainId.toString())
       case 'eth_sendTransaction':
         return this.sendTransaction(params)
       case 'eth_sign':
@@ -161,7 +163,7 @@ class MyCustomWalletProvider implements WalletProvider {
     let top = window.innerHeight / 2 - height / 2 + window.screenY
 
     if (isObject(query, true)) {
-      query = { ...query, infoPageConnected }
+      query = { ...query, infoPageConnected, id: crypto.randomUUID() }
     }
 
     const encodedQuery = encodeBase64(query)
