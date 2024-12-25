@@ -94,6 +94,7 @@ PasskeyProvider is a wrapper that supports using wallets
 
 
 ```jsx
+
 import { PasskeyProvider } from "sdk-v2-egglepasskeywallet-decard";
 
   //Example
