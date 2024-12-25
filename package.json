@@ -1,5 +1,5 @@
 {
-  "name": "sdk-v2-egglegamewallet",
+  "name": "sdk-v2-egglepasskeywallet",
   "version": "2.4.10",
   "description": "sdk passkeyring to connect smart account",
   "license": "MIT",
