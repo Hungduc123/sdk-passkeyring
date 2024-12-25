@@ -1,6 +1,6 @@
 {
-  "name": "sdk-v2-egglepasskeywallet",
-  "version": "2.4.9",
+  "name": "sdk-v2-egglegamewallet",
+  "version": "2.4.10",
   "description": "sdk passkeyring to connect smart account",
   "license": "MIT",
   "main": "./dist/main.umd.js",
